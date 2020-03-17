@@ -1,117 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-10">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Page Website Lightbox</title>
-    <link rel="stylesheet" type="text/css" href="CSS/LB_Styles.css"/>
+    <title>Document</title>
+    <link rel= "stylesheet" href="CSS/LB_Styles.css" type="text/css"/>
 </head>
+<body>
 
-<b class="row">
-<div class="column">
-    <img src="/Thumbnails/thumb-01.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(1)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-02.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(2)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-03.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(3)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-04.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(4)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-05.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(5)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-06.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(6)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-07.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(7)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-08.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(8)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-09.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(9)" class="hover-shadow">
-</div>
-<div class="column">
-    <img src="/Thumbnails/thumb-10.jpg" class="beginning-image-size" alt="Waterfall-Photo" style = "width:100%" currentSlide(10)" class="hover-shadow">
-</div>
-</div>
+    <h2 style="text-align:center">Waterfalls</h2>
 
-    <!------The Modal/Lightbox =-------->
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-<div class="modal-content">
+    <div class="row">
+        <div class="column">
+            <img src=".\Thumbnails\thumb-01.jpg" style="width:100%"
+                onclick="openModal();currentSlide(1)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src=".\Thumbnails\thumb-02.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src=".\Thumbnails\thumb-03.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src=".\Thumbnails\thumb-04.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src=".\Thumbnails\thumb-05.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src=".\Thumbnails\thumb-06.jpg" style="width:100%" onclick="openModal();currentSlide(6)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src=".\Thumbnails\thumb-07.jpg" style="width:100%" onclick="openModal();currentSlide(7)"
+                class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src=".\Thumbnails\thumb-08.jpg" style="width:100%" onclick="openModal();currentSlide(8)"
+                class="hover-shadow cursor">
+        </div>
 
-<div class="mySlides">
-    <div class="numbertext">1 / 10</div>
-    <img src="/images/LB-1.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-    <p class="caption">Seljalandsfoss Falls, Thorsmork (Southern Coast Of Iceland)</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">2 / 10</div>
-    <img src="/images/LB-2.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-    <p class="caption">"Niagara Falls; Niagara Falls, New York"</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">3 / 10</div>
-    <img src="/images/LB-3.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-    <p class="caption">Bruarfoss, Gimsnes (Southwest Iceland)</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">4 / 10</div>
-    <img src="/images/LB-4.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%";>
-    <p class="caption">Dettifoss, Jökulsá á Fjöllum River (Northern Iceland)</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">5 / 10</div>
-    <img src="/images/LB-5.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-    <p class="caption"> Havasu Falls; Grand Canyon, Arizona</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">6 / 10</div>
-    <img src="/images/LB-6.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-    <p class="caption">Palouse Falls; Palouse Falls State Park, Washington</p>
-</div>
-<div class="mySlides">
-   <div class="numbertext">7 / 10</div>
-<img src="/images/LB-7.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-<p class="caption">Ruby Falls; Chattanooga, Tennessee</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">8 / 10</div>
-    <img src="/images/LB-8.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-    <p class="caption">Victoria Falls, Zimbabwae, Africa</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">9 / 10</div>
-    <img src="/images/LB-9.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">    
-     <p class="caption">Grand Falls; Navajo Nation, Arizona</p>
-</div>
-<div class="mySlides">
-    <div class="numbertext">10/ 10</div>
-    <img src="/images/LB-10.jpg" class="hero-image-size" alt="Waterfall-Photo" style = "width:100%">
-    <p class="caption">Yellowstone Falls, Wyoming</p>
-</div>
-        <!-- Next/previous controls -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
 
-<!----- Thumbnail image controls ------>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
-<div class="column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-01.jpg" onclick="currentSlide(1)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-02.jpg" onclick="currentSlide(2)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-03.jpg" onclick="currentSlide(3)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-04.jpg" onclick="currentSlide(4)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-05.jpg" onclick="currentSlide(5)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-06.jpg" onclick="currentSlide(6)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-07.jpg" onclick="currentSlide(7)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-08.jpg" onclick="currentSlide(8)" alt="Waterfall-Photo" style = "width:100%";>column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-09.jpg" onclick="currentSlide(9)" alt="Waterfall-Photo" style = "width:100%";>"column">
-    <img class="bottom-image-navbar" src="/Thumbnails/thumb-10.jpg" onclick="currentSlide(10)" alt="Waterfall-Photo" style = "width:100%";>>
-<script src="./Javascript/LB_One_Page_Website.js"></script>
+            <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src=".\images\LB-1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src=".\images\LB-2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src=".\images\LB-3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src=".\images\LB-4.jpg" style="width:100%">
+            </div>
+         <div class="mySlides">
+             <div class="numbertext">5 / 8</div>
+             <img src=".\images\LB-5.jpg" style="width:100%">
+         </div>
+          <div class="mySlides">
+              <div class="numbertext">6 / 8</div>
+              <img src=".\images\LB-6.jpg" style="width:100%">
+          </div>
+           <div class="mySlides">
+               <div class="numbertext">7 / 8</div>
+               <img src=".\images\LB-7.jpg" style="width:100%">
+           </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src=".\images\LB-8.jpg" style="width:100%">
+            </div>
+         
+              
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="demo cursor" src=".\images\LB-1.jpg"
+                    style="width:100%" onclick="currentSlide(1)"
+                    alt="Seljalandsfoss Falls, Thorsmork (Southern Coast Of Iceland)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src=".\images\LB-2.jpg" style="width:100%" onclick="currentSlide(2)"
+                    alt="Niagara Falls; Niagara Falls, New York">
+                </div>
+            <div class="column">
+                <img class="demo cursor" src=".\images\LB-3.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt="Bruarfoss, Gimsnes (Southwest Iceland)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src=".\images\LB-4.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Dettifoss, Jökulsá á Fjöllum River (Northern Iceland)">
+            </div>
+             <div class="column">
+                 <img class="demo cursor" src=".\images\LB-5.jpg" style="width:100%" onclick="currentSlide(5)"
+                     alt="Havasu Falls; Grand Canyon, Arizona">
+             </div>
+              <div class="column">
+                  <img class="demo cursor" src=".\images\LB-6.jpg" style="width:100%" onclick="currentSlide(6)"
+                      alt="Palouse Falls; Palouse Falls State Park, Washington">
+              </div>
+               <div class="column">
+                   <img class="demo cursor" src=".\images\LB-7.jpg" style="width:100%" onclick="currentSlide(7)"
+                       alt="Ruby Falls; Chattanooga, Tennessee">
+               </div>
+                <div class="column">
+                    <img class="demo cursor" src=".\images\LB-8.jpg" style="width:100%" onclick="currentSlide(8)"
+                        alt="Victoria Falls, Zimbabwae, Africa">
+                </div>
+                    </div>
+    </div>
+    <script src="Javascript/LB_One_Page_Website.js"></script>
 </body>
 </html>
